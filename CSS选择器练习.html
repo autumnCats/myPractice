@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/*元素选择器*/
+		h1 {
+			color: blue
+		}
+
+	/*类名选择器*/
+		.puli {
+			font-size: 50px;
+		}
+
+	/* id 选择器*/
+		#miao {
+			color: skyblue;
+		}
+
+	/*通配符选择器*/
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+	/*后代选择器*/
+		.hd p {
+			color: red;
+		}
+
+	/*子代选择器*/
+		.demo > p {
+			color: red;
+		}
+
+	/*兄弟选择器*/
+		.nnm ~ div {
+			color: #AD4438;
+		}
+
+	/*相邻兄弟选择器*/
+		.qiqi + div {
+			color: green;
+		}
+
+	/*伪类选择器*/
+		a:link {
+			color: red;
+		}
+
+		a:hover {
+			color: #272822;
+		}
+
+		a:visited {
+			color: #96BF3B;
+		}
+
+		a:active {
+			color: blue;
+		}
+
+		/*结构伪类选择器*/
+		.un:first-child {
+			font-size: 30px;
+		}
+
+		.un:last-child {
+			font-size: 40px;
+		}
+
+		.il:nth-child(3) {
+			color: blue;
+			font-size: 40px;
+		}
+
+		.il:nth-last-child(even) {
+			color: red;
+		}
+
+		/*选择器组合*/
+		/*建议换行*/
+		.ku, 
+		.jiang, 
+		.yin {
+			color: green;
+			font-size: 50px;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="puli">hello word</h1>
+	<h2 id="miao">这是h2标签</h2>
+	<a href="www.baidu.com">百度一下</a>
+	<div class="hd">
+		<p>蒂姆-伯纳斯-李</p>
+		<p>万维网</p>
+		<span>沙雕网友</span>
+		<div>
+			<p>香香的烤面筋</p>
+		</div>
+	</div>
+
+	<div class="demo">
+		<p>小龙虾</p>
+		<p>小青蛙</p>
+		<div>
+			<p>小螃蟹</p>
+		</div>
+	</div>
+
+	<div>
+		<p class="nnm">老大</p>
+		<div>老二</div>
+		<div>老三</div>
+		<div>老四</div>
+		<div>老五</div>
+	</div>
+
+	<div>
+		<p class="qiqi">张三</p>
+		<div>李四</div>
+		<div>王五</div>
+		<div>刘六</div>
+		<div>吴七</div>
+	</div>
+	<a href="www.baidu.com">百度</a>
+	<ul>
+		<li class="un">html</li>
+		<li class="un">css</li>
+		<li class="un">javascript</li>
+		<li class="un">php</li>
+		<li class="un">java</li>
+	</ul>
+	<br />
+	<ul>
+		<li class="il">c++</li>
+		<li class="il">C#</li>
+		<li class="il">jquery</li>
+		<li class="il">DW</li>
+		<li class="il">file</li>
+	</ul>
+
+	<span class="ku">苦力怕</span>
+	<p class="jiang">僵尸</p>
+	<div class="yin">音乐</div>
+</body>
+</html>
