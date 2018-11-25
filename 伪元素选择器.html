@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.ch1::first-letter {
+			color: red;
+			font-size: 20px;
+		}
+
+		.ch2::first-line {
+			color: blue;
+			font-size: 20px;
+		}
+
+		.ch3::before {
+			content:'我是before';
+			color: red;
+			font-size: 20px;
+		}
+
+		.ch4::after {
+			content:'我是after';
+			color: blue;
+			font-size: 20px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<p class="ch1">西殿萤飞思悄然,孤灯挑尽未成眠.<br />
+	迟迟钟鼓初长夜,耿耿星河欲曙天</p>
+
+	<p class="ch2">鸳鸯瓦冷霜华重,翡翠衾寒谁与共?<br />
+	悠悠生死别经年,魂魄不曾来入梦</p>
+
+	<p class="ch3">临邛道士鸿都客,能以精诚致魂魄。<br />
+	为感君王辗转思,遂教方士殷勤觅。</p>
+	
+	<p class="ch4">排空驭气奔如电，升天入地求之遍。<br />
+	上穷碧落下黄泉,两处茫茫皆不见。</p>
+</body>
+</html>
